@@ -36,6 +36,26 @@
             this.textBox = new System.Windows.Forms.TextBox();
             this.labelTeam = new System.Windows.Forms.Label();
             this.listBoxTeam = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.labelRecer = new System.Windows.Forms.Label();
+            this.listBoxRacer = new System.Windows.Forms.ListBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelSalary = new System.Windows.Forms.Label();
+            this.labelRacerAge = new System.Windows.Forms.Label();
+            this.labelRacerName = new System.Windows.Forms.Label();
+            this.comboBoxTeamMove = new System.Windows.Forms.ComboBox();
+            this.labelMoveRacer = new System.Windows.Forms.Label();
+            this.textBoxRacerName = new System.Windows.Forms.TextBox();
+            this.textBoxRacerAge = new System.Windows.Forms.TextBox();
+            this.textBoxRacerSalary = new System.Windows.Forms.TextBox();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonComputeTeamSalary = new System.Windows.Forms.Button();
+            this.textBoxTeamSalary = new System.Windows.Forms.TextBox();
+            this.buttonComputeF1Salary = new System.Windows.Forms.Button();
+            this.textBoxF1Salary = new System.Windows.Forms.TextBox();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonInitializeData
@@ -107,11 +127,189 @@
             this.listBoxTeam.Size = new System.Drawing.Size(155, 329);
             this.listBoxTeam.TabIndex = 8;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(224, 178);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Töröl";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(122, 178);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Módosít";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(18, 178);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "Hozzáad";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // labelRecer
+            // 
+            this.labelRecer.AutoSize = true;
+            this.labelRecer.Location = new System.Drawing.Point(264, 59);
+            this.labelRecer.Name = "labelRecer";
+            this.labelRecer.Size = new System.Drawing.Size(114, 13);
+            this.labelRecer.TabIndex = 17;
+            this.labelRecer.Text = "Forma 1. csapat tagjai:";
+            // 
+            // listBoxRacer
+            // 
+            this.listBoxRacer.FormattingEnabled = true;
+            this.listBoxRacer.Location = new System.Drawing.Point(267, 87);
+            this.listBoxRacer.Name = "listBoxRacer";
+            this.listBoxRacer.Size = new System.Drawing.Size(297, 329);
+            this.listBoxRacer.TabIndex = 16;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBoxRacerSalary);
+            this.panel1.Controls.Add(this.textBoxRacerAge);
+            this.panel1.Controls.Add(this.textBoxRacerName);
+            this.panel1.Controls.Add(this.labelSalary);
+            this.panel1.Controls.Add(this.labelRacerAge);
+            this.panel1.Controls.Add(this.labelRacerName);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Location = new System.Drawing.Point(609, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(349, 240);
+            this.panel1.TabIndex = 23;
+            // 
+            // labelSalary
+            // 
+            this.labelSalary.AutoSize = true;
+            this.labelSalary.Location = new System.Drawing.Point(15, 99);
+            this.labelSalary.Name = "labelSalary";
+            this.labelSalary.Size = new System.Drawing.Size(43, 13);
+            this.labelSalary.TabIndex = 26;
+            this.labelSalary.Text = "Fizetés:";
+            // 
+            // labelRacerAge
+            // 
+            this.labelRacerAge.AutoSize = true;
+            this.labelRacerAge.Location = new System.Drawing.Point(15, 59);
+            this.labelRacerAge.Name = "labelRacerAge";
+            this.labelRacerAge.Size = new System.Drawing.Size(43, 13);
+            this.labelRacerAge.TabIndex = 25;
+            this.labelRacerAge.Text = "Életkor:";
+            // 
+            // labelRacerName
+            // 
+            this.labelRacerName.AutoSize = true;
+            this.labelRacerName.Location = new System.Drawing.Point(15, 23);
+            this.labelRacerName.Name = "labelRacerName";
+            this.labelRacerName.Size = new System.Drawing.Size(30, 13);
+            this.labelRacerName.TabIndex = 24;
+            this.labelRacerName.Text = "Név:";
+            // 
+            // comboBoxTeamMove
+            // 
+            this.comboBoxTeamMove.FormattingEnabled = true;
+            this.comboBoxTeamMove.Location = new System.Drawing.Point(267, 457);
+            this.comboBoxTeamMove.Name = "comboBoxTeamMove";
+            this.comboBoxTeamMove.Size = new System.Drawing.Size(210, 21);
+            this.comboBoxTeamMove.TabIndex = 24;
+            // 
+            // labelMoveRacer
+            // 
+            this.labelMoveRacer.AutoSize = true;
+            this.labelMoveRacer.Location = new System.Drawing.Point(483, 465);
+            this.labelMoveRacer.Name = "labelMoveRacer";
+            this.labelMoveRacer.Size = new System.Drawing.Size(81, 13);
+            this.labelMoveRacer.TabIndex = 25;
+            this.labelMoveRacer.Text = "csapatba átrak.";
+            // 
+            // textBoxRacerName
+            // 
+            this.textBoxRacerName.Location = new System.Drawing.Point(51, 16);
+            this.textBoxRacerName.Name = "textBoxRacerName";
+            this.textBoxRacerName.Size = new System.Drawing.Size(270, 20);
+            this.textBoxRacerName.TabIndex = 26;
+            // 
+            // textBoxRacerAge
+            // 
+            this.textBoxRacerAge.Location = new System.Drawing.Point(86, 52);
+            this.textBoxRacerAge.Name = "textBoxRacerAge";
+            this.textBoxRacerAge.Size = new System.Drawing.Size(235, 20);
+            this.textBoxRacerAge.TabIndex = 27;
+            // 
+            // textBoxRacerSalary
+            // 
+            this.textBoxRacerSalary.Location = new System.Drawing.Point(86, 96);
+            this.textBoxRacerSalary.Name = "textBoxRacerSalary";
+            this.textBoxRacerSalary.Size = new System.Drawing.Size(235, 20);
+            this.textBoxRacerSalary.TabIndex = 28;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(883, 564);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonExit.TabIndex = 29;
+            this.buttonExit.Text = "Kilépés";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            // 
+            // buttonComputeTeamSalary
+            // 
+            this.buttonComputeTeamSalary.Location = new System.Drawing.Point(267, 526);
+            this.buttonComputeTeamSalary.Name = "buttonComputeTeamSalary";
+            this.buttonComputeTeamSalary.Size = new System.Drawing.Size(297, 23);
+            this.buttonComputeTeamSalary.TabIndex = 30;
+            this.buttonComputeTeamSalary.Text = "Csapat össz bérkifeizetése:";
+            this.buttonComputeTeamSalary.UseVisualStyleBackColor = true;
+            // 
+            // textBoxTeamSalary
+            // 
+            this.textBoxTeamSalary.Location = new System.Drawing.Point(267, 567);
+            this.textBoxTeamSalary.Name = "textBoxTeamSalary";
+            this.textBoxTeamSalary.ReadOnly = true;
+            this.textBoxTeamSalary.Size = new System.Drawing.Size(297, 20);
+            this.textBoxTeamSalary.TabIndex = 31;
+            // 
+            // buttonComputeF1Salary
+            // 
+            this.buttonComputeF1Salary.Location = new System.Drawing.Point(37, 618);
+            this.buttonComputeF1Salary.Name = "buttonComputeF1Salary";
+            this.buttonComputeF1Salary.Size = new System.Drawing.Size(155, 23);
+            this.buttonComputeF1Salary.TabIndex = 32;
+            this.buttonComputeF1Salary.Text = "F1 össz bérkifeizetése:";
+            this.buttonComputeF1Salary.UseVisualStyleBackColor = true;
+            // 
+            // textBoxF1Salary
+            // 
+            this.textBoxF1Salary.Location = new System.Drawing.Point(37, 664);
+            this.textBoxF1Salary.Name = "textBoxF1Salary";
+            this.textBoxF1Salary.ReadOnly = true;
+            this.textBoxF1Salary.Size = new System.Drawing.Size(155, 20);
+            this.textBoxF1Salary.TabIndex = 33;
+            // 
             // Form1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.textBoxF1Salary);
+            this.Controls.Add(this.buttonComputeF1Salary);
+            this.Controls.Add(this.textBoxTeamSalary);
+            this.Controls.Add(this.buttonComputeTeamSalary);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.labelMoveRacer);
+            this.Controls.Add(this.comboBoxTeamMove);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.labelRecer);
+            this.Controls.Add(this.listBoxRacer);
             this.Controls.Add(this.buttonInitializeData);
             this.Controls.Add(this.buttonDeleteTeam);
             this.Controls.Add(this.buttonUpdateTeam);
@@ -122,6 +320,8 @@
             this.Controls.Add(this.listBoxTeam);
             this.Name = "Form1Form";
             this.Text = "Forma 1.";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,6 +337,25 @@
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Label labelTeam;
         private System.Windows.Forms.ListBox listBoxTeam;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label labelRecer;
+        private System.Windows.Forms.ListBox listBoxRacer;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelSalary;
+        private System.Windows.Forms.Label labelRacerAge;
+        private System.Windows.Forms.Label labelRacerName;
+        private System.Windows.Forms.ComboBox comboBoxTeamMove;
+        private System.Windows.Forms.Label labelMoveRacer;
+        private System.Windows.Forms.TextBox textBoxRacerSalary;
+        private System.Windows.Forms.TextBox textBoxRacerAge;
+        private System.Windows.Forms.TextBox textBoxRacerName;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button buttonComputeTeamSalary;
+        private System.Windows.Forms.TextBox textBoxTeamSalary;
+        private System.Windows.Forms.Button buttonComputeF1Salary;
+        private System.Windows.Forms.TextBox textBoxF1Salary;
     }
 }
 
