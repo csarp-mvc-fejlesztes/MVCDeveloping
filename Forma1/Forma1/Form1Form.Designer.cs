@@ -49,12 +49,12 @@
             this.labelRacerAge = new System.Windows.Forms.Label();
             this.labelRacerName = new System.Windows.Forms.Label();
             this.comboBoxTeamMove = new System.Windows.Forms.ComboBox();
-            this.labelMoveRacer = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonComputeTeamSalary = new System.Windows.Forms.Button();
             this.textBoxTeamSalary = new System.Windows.Forms.TextBox();
             this.buttonComputeF1Salary = new System.Windows.Forms.Button();
             this.textBoxF1Salary = new System.Windows.Forms.TextBox();
+            this.buttonMoveToTeam = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -240,17 +240,8 @@
             this.comboBoxTeamMove.FormattingEnabled = true;
             this.comboBoxTeamMove.Location = new System.Drawing.Point(267, 457);
             this.comboBoxTeamMove.Name = "comboBoxTeamMove";
-            this.comboBoxTeamMove.Size = new System.Drawing.Size(210, 21);
+            this.comboBoxTeamMove.Size = new System.Drawing.Size(186, 21);
             this.comboBoxTeamMove.TabIndex = 24;
-            // 
-            // labelMoveRacer
-            // 
-            this.labelMoveRacer.AutoSize = true;
-            this.labelMoveRacer.Location = new System.Drawing.Point(483, 465);
-            this.labelMoveRacer.Name = "labelMoveRacer";
-            this.labelMoveRacer.Size = new System.Drawing.Size(81, 13);
-            this.labelMoveRacer.TabIndex = 25;
-            this.labelMoveRacer.Text = "csapatba átrak.";
             // 
             // buttonExit
             // 
@@ -295,17 +286,26 @@
             this.textBoxF1Salary.Size = new System.Drawing.Size(155, 20);
             this.textBoxF1Salary.TabIndex = 33;
             // 
+            // buttonMoveToTeam
+            // 
+            this.buttonMoveToTeam.Location = new System.Drawing.Point(459, 454);
+            this.buttonMoveToTeam.Name = "buttonMoveToTeam";
+            this.buttonMoveToTeam.Size = new System.Drawing.Size(100, 23);
+            this.buttonMoveToTeam.TabIndex = 34;
+            this.buttonMoveToTeam.Text = "csapatba átrak.";
+            this.buttonMoveToTeam.UseVisualStyleBackColor = true;
+            // 
             // Form1Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.buttonMoveToTeam);
             this.Controls.Add(this.textBoxF1Salary);
             this.Controls.Add(this.buttonComputeF1Salary);
             this.Controls.Add(this.textBoxTeamSalary);
             this.Controls.Add(this.buttonComputeTeamSalary);
             this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.labelMoveRacer);
             this.Controls.Add(this.comboBoxTeamMove);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelRecer);
@@ -347,7 +347,6 @@
         private System.Windows.Forms.Label labelRacerAge;
         private System.Windows.Forms.Label labelRacerName;
         private System.Windows.Forms.ComboBox comboBoxTeamMove;
-        private System.Windows.Forms.Label labelMoveRacer;
         private System.Windows.Forms.TextBox textBoxRacerSalary;
         private System.Windows.Forms.TextBox textBoxRacerAge;
         private System.Windows.Forms.TextBox textBoxRacerName;
@@ -356,6 +355,7 @@
         private System.Windows.Forms.TextBox textBoxTeamSalary;
         private System.Windows.Forms.Button buttonComputeF1Salary;
         private System.Windows.Forms.TextBox textBoxF1Salary;
+        private System.Windows.Forms.Button buttonMoveToTeam;
     }
 }
 
