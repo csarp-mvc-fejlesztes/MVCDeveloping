@@ -1,0 +1,11 @@
+﻿Nyissa meg a modell rétegben a Racer.cs állományt és végezze el a következő feladatokat!
+    Írja meg a setName metódust a megfelelő komment után!
+    Írja meg a getAge metódus a megfelelő komment után!
+    Írja meg az update metódus kódját!
+    Írja meg a ToString metódust a megfelelő komment után!
+
+Nyissa meg a repository rétegben a Team.cs állományt és végezze el a következő feladatokat!
+    Írja meg a Team(string name) konstruktor kódját!
+    A deleteAllRacersInTeam metódus nem jól végzi feladatát! Adja hozzá a szükséges egy sort a kódhoz!
+    Írja meg az update metódust a megfelelő komment után!
+    Írja meg a getRacers metódus kódját!
