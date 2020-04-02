@@ -1,0 +1,10 @@
+﻿Nyissa meg a modell rétegben a F1.cs állományt és végezze el a következő feladatokat!
+
+    Írja meg az F1 class konstruktorát!
+    Az add metódusban írja meg a feltételt és a kivétel dobást!
+    A delete metódusban írja meg a foreach ciklus úgy, hogy a kód elvégezze feladatát!
+    Írja meg az update metódus kódját!
+    Írja meg a getF1Salary hiányzó kódját, hogy az a F1 összkiadását adja. Ügyeljen a kivételkezelésre!
+    Írja meg az IsExsist metódus kódját!
+    Írja meg az IsExsistRacer  metódus kódját!
+    Pótolja a searchRacerByName metódusban az elágazás feltételét!
