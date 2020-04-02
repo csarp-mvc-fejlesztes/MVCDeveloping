@@ -1,0 +1,18 @@
+﻿        Az addRacer metódusban egészítse ki a foreach ciklus fejlécét és fejezze be a kivétel dobást kódját!
+        A deleteRacer metódusban írja meg az elágazás törzsét, hogy a kód helyesen működjön!
+        Az updateRacer metódusban írja meg a ciklus törzség, hogy az helyesen működjön!
+        Írja meg a getNumberOfRacer metódust!
+        Írja meg a searchRacerByName metódust!
+        Írja meg a getMaxId metódus hiányzó kódját!
+
+
+Nyissa meg a repository rétegben a F1RacerManagment.cs fájlt és oldja meg a következő feladatokat:
+
+        Határozza meg, hogy a getNumberOfRacers metódusban mi a visszatérési érték!
+        A getRacersFromTheTeam listából hiányzik a kivétel dobás! Mikor kerül sor a kivétel dobásra? Írja meg a hiányzó kódot!
+        Az addRacerToTeam metódusban hiányzik a foreach ciklus fejléce, az elágazás feltétele és egy metódus hibás! Pótolja a hiányzó kódot!
+        Az updateRacerInTeam metódusban hiányzik az egyik kivétel dobás! Hova kell kerüljön, és mi lesz a szövege?
+        A deleteRacerInTeam feladat kódja nagyon hiányos. Az előző kódrészek segítségével pótolja a hiányzó kódot a kivételdobással!
+        A getTeamSalary metódus foreach ciklusából hiányzik a kivétel vizsgálattal kapcsolatos szerkezet! Írja meg! A kivétel kezeléssel is foglalkozzon!
+        A getNextRacerId metódusból hiányzik a maximum megtalálása! Írja meg a hiányzó kódot a foreach ciklusban!
+        A getRacerId metódus kódja nincs meg! Írja meg! 
