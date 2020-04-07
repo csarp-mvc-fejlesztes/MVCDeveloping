@@ -18,10 +18,10 @@ namespace Forma1.repository
         {
             if (racers == null)
                 throw new TeamException("Végzetes hiba, racers lista nincs példányosítva");
-            foreach(Racer r in racers)
+            foreach()
             {
                 if (r.getName() == newRacer.getName() && r.getAge() == newRacer.getAge() && r.getSalary() == newRacer.getAge())
-                    throw new TeamException(r.getName() + " nevű és " + r.getAge() + " életkorú és " + r.getSalary() + " fizetésű versenyző már létezik");
+                    throw new 
             }
             racers.Add(newRacer);
         }
@@ -37,15 +37,12 @@ namespace Forma1.repository
         {
             if (racers == null)
                 throw new TeamException("Végzetes hiba, racers lista nincs példányosítva");
-            int index = 0;
             foreach (Racer r in racers)
             {
                 if (r.getName() == name && r.getAge()==age)
-                {
-                    racers.RemoveAt(index);
-                    return;
+                {                    
                 }
-                index = index + 1;
+                
             }
             throw new TeamException(name + " versenyző a csapatnak nem tagja, nem lehet törlni");
         }
@@ -61,7 +58,6 @@ namespace Forma1.repository
         {
             if (racers == null)
                 throw new TeamException("Végzetes hiba, racers lista nincs példányosítva.");
-            int index = 0;
             foreach (Racer r in racers)
             {
                 if (r.getName() == name)
@@ -69,7 +65,6 @@ namespace Forma1.repository
                     r.update(newRacer);
                     return;
                 }
-                index = index + 1;
             }
             throw new TeamException(name + " módosítandó versenyzőt nem találjuk, nem lehet módosítani.");
         }
@@ -81,9 +76,7 @@ namespace Forma1.repository
         /// <exception cref="TeamException">Végzetes hiba, racers lista nincs példányosítva</exception>
         public int getNumberOfRacers()
         {
-            if (racers == null)
-                throw new TeamException("Végzetes hiba, racers lista nincs példányosítva");
-            return racers.Count();     
+               
         }
 
         /// <summary>
@@ -96,10 +89,6 @@ namespace Forma1.repository
         {
             if (racers == null)
                 throw new TeamException("Végzetes hiba, racers lista nincs példányosítva");
-            foreach (Racer r in racers)
-                if (r.getName() == racerName)
-                    return r;
-            return null;
         }
 
         /// <summary>
@@ -137,7 +126,7 @@ namespace Forma1.repository
         }
 
         /// <summary>
-        /// Megahtározza a legnagyobb azonosítójú versenyző azonosítóját
+        /// Meghatározza a legnagyobb azonosítójú versenyző azonosítóját
         /// </summary>
         /// <returns>A legnagyobb azonosító, ha lista üres akkor -1</returns>
         /// <exception cref="TeamException">Végzetes hiba, racers lista nincs példányosítva</exception>
@@ -145,11 +134,7 @@ namespace Forma1.repository
         {
             if (racers == null)
                 throw new TeamException("Végzetes hiba, racers lista nincs példányosítva");
-            int maxRacerId = -1;
-            foreach (Racer r in racers)
-                if (r.getId() > maxRacerId)
-                    maxRacerId = r.getId();
-            return maxRacerId;
+           
         }
     }
 }
