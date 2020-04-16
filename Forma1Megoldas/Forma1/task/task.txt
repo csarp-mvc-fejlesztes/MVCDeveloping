@@ -1,0 +1,17 @@
+﻿Controller réteg kapcsolatot teremt a GUI és a Service réteg között
+    Feladata a bemenő adatok vizsgálata
+    Feladata a megjelenítendő adatok átalakítása a GUI számára
+    Feladata a programozónak szánt hibaüzenetek megjelenítése
+Nyissa meg az F1Controller.cs állományt!
+    A getTeamNames metódusban a hibás sorban az osztály egy saját metódusát kell meghívni, hogy megjelenjenek a csapatnevek a listában. Írja be a metódus nevét és paraméterét!
+    A getTeamListToTeamNameList metódusban a létrehozott listába a csapat neveket kell hozzáadni. Írja meg a hiányzó kódot!
+    A getTeamNamesListExclude metódusban hiányzik a metódushívás. A réteg melyik metódusát kell meghívni, hogy helyesen működjön a kód? Írja le a kódot!
+    Az addTeamToF1 metódusban a validation metódus két saját kivételt dob. Nézze meg melyek ezek és egészítsék ki a catch utasításokat a szükséges kóddal! A hibakezelő a dobott kivételek üzenetét írja ki! Egészítse ki a kódot!
+    A modifyTeamName metódusban a jelzett helyen hiányzik a metódushívás. Egészítse ki a kódot!
+    A getF1Salary metódusban nincs meghatározva a metódus visszatérési értéke. Írja meg úgy a kódot, hogy a kiszámolt összeg mellet a "millió dollár" string is megjelenjen a visszatérési értékben!
+    Hasonló képen a coputeTeamSalary metódusban is hiányos a kód! Adja meg a hiányzó kódot, hogy a megfelelő értéket és mögötte a megfelelő szöveget adja vissza!
+Nyissa meg a F1ControllerRacerManagment.cs fájlt!
+    Az addRacerToTeam metódusban az életkor és fizetés konvertálásának kódja hiányzik. Írja meg a hiányzó kódot!
+    Az updateRacerInTeam metódusban a kivételdobások előtt szükséges feltételek hiányoznak. Írja meg azokat!
+    A deleteRacerFromTeam metódusban hiányzik a hiba szövege! Írja le a megfelelő helyre!
+    A getTeamRacerName metódusban le kell kérni a versenyzők listáját és ki kell ebből alakítani a versenyző nevekből álló listát, ami a metódus visszatérési értéke. Írja meg a szükséges kódot!

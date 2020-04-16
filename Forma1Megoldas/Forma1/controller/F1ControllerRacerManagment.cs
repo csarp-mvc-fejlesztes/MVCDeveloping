@@ -44,10 +44,10 @@ namespace Forma1.controller
             if (teamName == string.Empty)
                 throw new ControllerException("A csapat név nem lehet üres string. Előbb hozza létre a csapatot, utánna adja hozzá a versenyzőt.");
             int racerAgeNumber = 0;
-            if (!int.TryParse(racerAge, out racerAgeNumber))
+            if (!int.
                 throw new ControllerException("A megadott életkor nem megfelelő alakú szám!");
             int racerSalaryNumber = 0;
-            if (!int.TryParse(racerSalary, out racerSalaryNumber))
+            if (!int.
                 throw new ControllerException("A megadott fizetés nem megfelelő alakú szám!");
             if (racerAgeNumber <= 0)
                 throw new ControllerException("A versenyző életkora nem lehet nulla vagy negatív.");
@@ -126,9 +126,9 @@ namespace Forma1.controller
             int racerSalaryNumber = 0;
             if (!int.TryParse(racerSalary, out racerSalaryNumber))
                 throw new ControllerException("A megadott fizetés nem megfelelő alakú szám!");
-            if (racerAgeNumber <= 0)
+            if ()
                 throw new ControllerException("A versenyző életkora nem lehet nulla vagy negatív.");
-            if (racerSalaryNumber <= 0)
+            if ()
                 throw new ControllerException("A versenyző fizetése nem lehet nulla vagy negatív.");
 
             try
@@ -181,7 +181,7 @@ namespace Forma1.controller
             int racerAgeNumber = 0;
             if (!int.TryParse(racerAge, out racerAgeNumber))
             {
-                Debug.WriteLine("A megadott életkor nem megfelelő alakú szám!");
+                Debug.WriteLine(???);
                 return;
             }
             try
@@ -206,9 +206,7 @@ namespace Forma1.controller
             List<string> racersName = new List<string>();
             try
             {                                   
-                    List<Racer> racers = teamService.getRacerFromTheTeam(teamName);
-                    foreach (Racer r in racers)
-                        racersName.Add(r.getName());
+                    List<Racer> racers = teamService.
                     return racersName;
             }
             catch (TeamServiceException tse)
