@@ -51,7 +51,7 @@ namespace Forma1.repository
         public List<Racer> getRacersFromTheTeam(string teamName)
         {
             if (teams == null)
-                throw new F1Exception("Végzetes hiba, teams lista nincs példányosítva");
+
             foreach (Team t in teams)
             {
                 if (t.getName() == teamName)
@@ -63,7 +63,7 @@ namespace Forma1.repository
                     catch (TeamException te)
                     {
                         Debug.WriteLine(te.Message);
-                        throw new F1Exception("A csapatnak nincsennek versenyzői");
+                        throw 
                     }
                 }
             }

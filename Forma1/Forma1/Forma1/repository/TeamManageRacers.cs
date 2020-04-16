@@ -60,11 +60,7 @@ namespace Forma1.repository
                 throw new TeamException("Végzetes hiba, racers lista nincs példányosítva.");
             foreach (Racer r in racers)
             {
-                if (r.getName() == name)
-                {
-                    r.update(newRacer);
-                    return;
-                }
+                
             }
             throw new TeamException(name + " módosítandó versenyzőt nem találjuk, nem lehet módosítani.");
         }
