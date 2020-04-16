@@ -54,30 +54,7 @@ namespace Forma1.controller
             try
             {
                 List<Team> teams = teamService.getTeams();
-                return TeamListToTeamNameList(teams);
-            }
-            catch (TeamServiceException tse)
-            {
-                Debug.WriteLine(tse.Message);
-                List<string> teams = new List<string>();
-                return teams;
-            }
-        }
-
-        /// <summary>
-        /// Csapatnevek lekérése egy adott csapat nevének kihagyásával
-        /// TeamListToTeamNameList beső függvény segítségével visszatérési érték megjelenítése
-        /// TeamServiceException elkapása, és megjelenítése a Debug osztály segítségével. 
-        /// Kivétel elkapás esetén üres lista a visszatérési érték.
-        /// </summary>
-        /// <param name="teamName">Ennek a csapatnak a neve nem szerepelhet a listába</param>
-        /// <returns>Csapatnevek listája kihagyva egy adott nevű csapatot</returns>
-        public List<string> getTeamNamesListExclude(string teamName)
-        {
-            try
-            {
-                List<Team> teams = teamService.getTeamsExclude(teamName);
-                return TeamListToTeamNameList(teams);
+                return ;
             }
             catch (TeamServiceException tse)
             {
@@ -98,9 +75,32 @@ namespace Forma1.controller
             List<string> teamNames = new List<string>();
             foreach (Team t in teams)
             {
-                teamNames.Add(t.getName());
+                teamNames.Add();
             }
             return teamNames;
+        }
+
+        /// <summary>
+        /// Csapatnevek lekérése egy adott csapat nevének kihagyásával
+        /// TeamListToTeamNameList beső függvény segítségével visszatérési érték megjelenítése
+        /// TeamServiceException elkapása, és megjelenítése a Debug osztály segítségével. 
+        /// Kivétel elkapás esetén üres lista a visszatérési érték.
+        /// </summary>
+        /// <param name="teamName">Ennek a csapatnak a neve nem szerepelhet a listába</param>
+        /// <returns>Csapatnevek listája kihagyva egy adott nevű csapatot</returns>
+        public List<string> getTeamNamesListExclude(string teamName)
+        {
+            try
+            {
+                List<Team> teams = teamService
+                return TeamListToTeamNameList(teams);
+            }
+            catch (TeamServiceException tse)
+            {
+                Debug.WriteLine(tse.Message);
+                List<string> teams = new List<string>();
+                return teams;
+            }
         }
 
         /// <summary>
@@ -122,14 +122,14 @@ namespace Forma1.controller
                 NameValidator nv = new NameValidator(teamName);
                 nv.validation();
             }
-            catch (NameNotValidNameIsEmptyException nnve)
+            catch ()
             {
-                Debug.WriteLine(nnve.Message);
+                Debug.WriteLine();
                 throw new ControllerException("Az üres név nem megfelelő csapatnév!");
             }
-            catch (NameNotValidFirstLetterProblemException nnve)
+            catch ()
             {
-                Debug.WriteLine(nnve.Message);
+                Debug.WriteLine();
                 throw new ControllerException(teamName + " nem megfelelő csapatnév, mivel az első betű nem nagybetű.");
             }
             try
@@ -180,7 +180,7 @@ namespace Forma1.controller
             }
             try
             {
-                teamService.modifyTeamName(oldTeamName, newTeamName);
+                ???
             }
             catch (TeamServiceToGUIException tstge)
             {
@@ -231,8 +231,7 @@ namespace Forma1.controller
             try
             {
                 int f1Salary = teamService.getF1Salary();
-                string f1SalaryToView = f1Salary.ToString()+" millió dollár";
-                return f1SalaryToView;
+                string f1SalaryToView = 
             }
             catch (TeamServiceException tse)
             {
@@ -250,9 +249,7 @@ namespace Forma1.controller
         {
             try
             {
-                int f1TeamSalary = teamService.getTeamSalary(teamName);
-                string f1TeamSalaryToView = f1TeamSalary.ToString() + " millió dollár";
-                return f1TeamSalaryToView;
+
             }
             catch (TeamServiceException tse)
             {
