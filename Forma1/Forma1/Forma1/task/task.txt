@@ -1,6 +1,6 @@
 ﻿        Az addRacer metódusban egészítse ki a foreach ciklus fejlécét és fejezze be a kivétel dobást kódját!
         A deleteRacer metódusban írja meg az elágazás törzsét, hogy a kód helyesen működjön!
-        Az updateRacer metódusban írja meg a ciklus törzség, hogy az helyesen működjön!
+        Az updateRacer metódusban írja meg a ciklus törzsét, hogy az helyesen működjön!
         Írja meg a getNumberOfRacer metódust!
         Írja meg a searchRacerByName metódust!
         Írja meg a getMaxId metódus hiányzó kódját!
