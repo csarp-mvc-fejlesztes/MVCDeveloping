@@ -16,7 +16,7 @@ namespace Forma1.validation
     public class NameValidator
     {
         /// <summary>
-        /// Az eltőrolt név amit vizsgálunk
+        /// Az eltárolt név amit vizsgálunk
         /// </summary>
         private string name;
         /// <summary>
@@ -25,16 +25,16 @@ namespace Forma1.validation
         /// <param name="name">A név amit ellenőrizni kell</param>
         public NameValidator(string name)
         {
-            this.name = name;
+            this;
         }
         /// <summary>
         /// Az ellenőrzéseket végző metódus
         /// </summary>
         public void validation()
         {
-            if (isEmptyName())
+            if ()
                 throw new NameNotValidNameIsEmptyException("A név nem lehet üres!");
-            if (!isFistLetterUppercase())
+            if ()
                 throw new NameNotValidFirstLetterProblemException("A név nagy kezdőbetűvel kell kezdőjön!");
         }
 
@@ -44,12 +44,7 @@ namespace Forma1.validation
         /// <returns>Igaz, ha az első betű nagybetű</returns>
         private bool isFistLetterUppercase()
         {
-            if (name.Length == 0)
-                return true;
-            if (char.IsUpper(name[0]))
-                return true;
-            else
-                return false;
+            return true;
         }
 
         /// <summary>
@@ -58,10 +53,7 @@ namespace Forma1.validation
         /// <returns>Igaz, ha a név üres</returns>
         private bool isEmptyName()
         {
-            if (name == string.Empty)
-                return true;
-            else
-                return false;
+            return false;
         }
     }
 }

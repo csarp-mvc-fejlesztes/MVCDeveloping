@@ -63,7 +63,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Forma1\Forma1Megoldas.csproj">
+    <ProjectReference Include="..\Forma1\Forma1ValidationLayer.csproj">
       <Project>{AE8C6AE6-9BAD-4068-90DB-1001067D31A6}</Project>
       <Name>Forma1Megoldas</Name>
     </ProjectReference>

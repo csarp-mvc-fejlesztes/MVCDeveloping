@@ -17,13 +17,13 @@ namespace Forma1.validation.Tests
         {
             try
             {
-                NameValidator nv = new NameValidator("");
+                NameValidator nv = 
                 nv.validation();
-                Assert.Fail("Üres névre nem dob kivételt!");
+                Assert.Fail(");
             }
             catch (NameNotValidNameIsEmptyException nnv)
             {
-                if (nnv.Message != "A név nem lehet üres!")
+                if (nnv.Message != )
                     Assert.Fail("Üres név esetén kivételt dob, de a kivétel szövege rossz!");
             }
             catch (Exception e)
@@ -36,13 +36,13 @@ namespace Forma1.validation.Tests
         {
             try
             {
-                NameValidator nv = new NameValidator("nemecsek");
+                NameValidator nv = 
                 nv.validation();
-                Assert.Fail("Kis betűvel kezdődő név esetén nem dob kivételt!");
+                Assert.Fail(");
             }
             catch (NameNotValidFirstLetterProblemException nnv)
             {
-                if (nnv.Message != "A név nagy kezdőbetűvel kell kezdőjön!")
+                if (nnv.Message != )
                     Assert.Fail("Kis betűvel kezdődő név esetén kivételt dob, de a kivétel szövege rossz!");
             }
             catch (Exception e)
@@ -54,14 +54,14 @@ namespace Forma1.validation.Tests
         [TestMethod()]
         public void validationTestNameValid()
         {
-            NameValidator nv = new NameValidator("Nemecsek");
+            NameValidator nv = 
             try
             {
                 nv.validation();
             }
             catch (Exception e)
             {
-                Assert.Fail("Nem üres és nagybetűvel kezdődő névre kivételt dob!");
+                Assert.Fail(");
             }
         }
     }
