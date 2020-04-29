@@ -24,7 +24,7 @@ namespace Forma1
         private void updateTeamNameListBox()
         {
             listBoxTeam.DataSource = null;
-            listBoxTeam.DataSource = controller.getTeamNames();
+            listBoxTeam.DataSource = controller.
             textBoxNewTeamName.Text = string.Empty;
             if (listBoxRacer.Items.Count==0)
             {
@@ -47,8 +47,8 @@ namespace Forma1
             {
                 string teamName = listBoxTeam.Text;
                 List<string> teamsExcludeSelected = controller.getTeamNamesListExclude(teamName);
-                comboBoxTeamMove.DataSource = null;
-                comboBoxTeamMove.DataSource = teamsExcludeSelected;
+                comboBoxTeamMove.DataSource = 
+                comboBoxTeamMove.DataSource = 
                 if (comboBoxTeamMove.Items.Count > 0)
                     comboBoxTeamMove.SelectedIndex = 0;
             }
@@ -68,7 +68,7 @@ namespace Forma1
         /// </summary>
         private void listBoxTeam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listBoxTeam.SelectedIndex < 0)
+            if (listBoxTeam.SelectedIndex )
             {
                 textBoxNewTeamName.Text = string.Empty;
                 comboBoxTeamMove.DataSource = null;
@@ -90,7 +90,7 @@ namespace Forma1
         /// </summary>
         private void buttonAddTeam_Click(object sender, EventArgs e)
         {
-            string teamName = textBoxNewTeamName.Text;
+            string teamName = 
             errorProviderAddTeam.Clear();
             try
             {
@@ -118,8 +118,8 @@ namespace Forma1
             errorProviderUpdateTeam.Clear();
             try
             {
-                string newTeamName = textBoxNewTeamName.Text;
-                string oldTeamName = listBoxTeam.Text;
+                string newTeamName = 
+                string oldTeamName = 
                 controller.modifyTeamName(oldTeamName, newTeamName);
                 updateTeamNameListBox();
                 updateComboBoxTeamMove();
@@ -138,13 +138,13 @@ namespace Forma1
         /// Frissítse a ComboBox-ot (updateComboBoxTeamMove)
         /// Ha a kontroller réteg hibád dob jelenítse azt meg az errorProviderDeleteTeam-ben. Biztosítsa az ErrorProvider törlését is! 
         /// </summary>        
-        private void buttonDeleteTeam_Click(object sender, EventArgs e)
+        private void buttonUpdateTeam_Click(object sender, EventArgs e)
         {
             errorProviderDeleteTeam.Clear();
             try
             {
-                string teamNameToDelete = listBoxTeam.Text;
-                controller.deleteTeam(teamNameToDelete);
+                string teamNameToDelete = 
+                controller.
                 updateTeamNameListBox();
                 updateComboBoxTeamMove();
             }

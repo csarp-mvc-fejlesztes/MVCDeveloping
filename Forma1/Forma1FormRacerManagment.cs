@@ -21,9 +21,9 @@ namespace Forma1
         /// </summary>
         private void buttonClearRacerTextBox_Click(object sender, EventArgs e)
         {
-            textBoxRacerName.Text = string.Empty;
-            textBoxRacerAge.Text = string.Empty;
-            textBoxRacerSalary.Text = string.Empty;
+            textBoxRacerName.Text =
+            textBoxRacerAge.Text = 
+            textBoxRacerSalary.Text = 
         }
 
         /// <summary>
@@ -33,9 +33,9 @@ namespace Forma1
         {
             if (listBoxRacer.Items.Count == 0)
             {
-                textBoxRacerName.Text = string.Empty;
-                textBoxRacerAge.Text = string.Empty;
-                textBoxRacerSalary.Text = string.Empty;
+                textBoxRacerName.Text = 
+                textBoxRacerAge.Text =
+                textBoxRacerSalary.Text = 
             }
         }
 
@@ -50,7 +50,7 @@ namespace Forma1
             listBoxRacer.DataSource = null;
             List<string> racerNames = controller.getTeamRacersName(teamName);
             listBoxRacer.DataSource = racerNames;
-            if (listBoxRacer.Items.Count == 0)
+            if (listBoxRacer. == 0)
                 clearRacerTextBox();
             updateComboBoxTeamMove();
         }
@@ -71,7 +71,7 @@ namespace Forma1
             string racerName = listBoxRacer.Text;
 
             Racer selectedRacer = controller.searchRacerByName(teamName, racerName);
-            if (selectedRacer != null)
+            if (selectedRacer  null)
             {
                 textBoxRacerName.Text = selectedRacer.getName();
                 textBoxRacerAge.Text = selectedRacer.getAge().ToString();
@@ -90,7 +90,7 @@ namespace Forma1
         private void buttonAddRacer_Click(object sender, EventArgs e)
         {
             errorProviderAddRacer.Clear();
-            if (listBoxTeam.SelectedIndex < 0)
+            if ()
             {
                 errorProviderAddRacer.SetError(buttonAddRacer, "Ha nincs csapat kijelölve vagy nincs csapat, akkor nem lehet hozzáadni a csapathoz új versenyzőt!");
                 return;
@@ -127,12 +127,12 @@ namespace Forma1
             if (listBoxTeam.SelectedIndex < 0)
             {
                 errorProviderUpdateRacer.SetError(buttonUpdateRacer, "Ha nincs csapat kijelölve vagy nincs csapat, akkor nem lehet módosítani a versenyzőjét!");
-                return;
+                r;
             }
             if (listBoxRacer.SelectedIndex < 0)
             {
                 errorProviderUpdateRacer.SetError(buttonUpdateRacer, "Ha nincs versenyző kijelölve, akkor nem lehet módosítani a versenyzőjét!");
-                return;
+                r;
             }
             string teamName = listBoxTeam.Text;
             string racerToModify = listBoxRacer.Text;
@@ -174,9 +174,9 @@ namespace Forma1
                 errorProviderDeleteRacer.SetError(buttonUpdateRacer, "Ha nincs versenyző kijelölve, akkor nem lehet módosítani a versenyzőjét!");
                 return;
             }
-            string teamName = listBoxTeam.Text;
-            string racerName = textBoxRacerName.Text;
-            string racerAge = textBoxRacerAge.Text;
+            string teamName = ;
+            string racerName = ;
+            string racerAge = ;
             try
             {
                 controller.deleteRacerFromTeam(teamName, racerName, racerAge);
@@ -222,9 +222,9 @@ namespace Forma1
                 return;
             if (listBoxRacer.SelectedIndex < 0)
                 return;
-            string fromTeamName = listBoxTeam.Text;            
-            string toTeamName = comboBoxTeamMove.Text;            
-            string movedRacerName = listBoxRacer.Text; 
+            string fromTeamName = ;            
+            string toTeamName = ;            
+            string movedRacerName = ; 
             try
             {
                 controller.moveToTeam(fromTeamName, toTeamName, movedRacerName);
