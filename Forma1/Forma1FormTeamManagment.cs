@@ -138,7 +138,7 @@ namespace Forma1
         /// Frissítse a ComboBox-ot (updateComboBoxTeamMove)
         /// Ha a kontroller réteg hibád dob jelenítse azt meg az errorProviderDeleteTeam-ben. Biztosítsa az ErrorProvider törlését is! 
         /// </summary>        
-        private void buttonUpdateTeam_Click(object sender, EventArgs e)
+        private void buttonDeleteTeam_Click(object sender, EventArgs e)
         {
             errorProviderDeleteTeam.Clear();
             try
